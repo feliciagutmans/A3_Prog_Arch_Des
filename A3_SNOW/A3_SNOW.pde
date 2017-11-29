@@ -119,6 +119,9 @@ void drawSnow()
   width/2.0, height/2.0, 0, 0, 1, 0);
   for(int i=0; i<xPos.length; i++)
   {
+    //makes the inside and border of snow white
+    fill(255);
+    stroke(255);
     ellipse(xPos[i], yPos[i], flakeWidth[i], flakeWidth[i]);
     
     if(direction[i]==0)
